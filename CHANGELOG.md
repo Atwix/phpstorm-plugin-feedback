@@ -1,6 +1,27 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 # Magento and Adobe Commerce PhpStorm by Atwix Changelog
 
+## [2023.2.0] - 2023-03-06
+
+### Added
+
+- [Paid] Integrated ChatGPT widget into IDE Tool Window
+- [Paid] Action for comparing overridden JavaScript file with original
+- [Paid] Action for comparing overridden HTML template file with original
+- [Paid] Action for comparing overridden email template file with original
+- [Paid] Action for comparing overridden layout file with original
+- Navigation support for phtml templates inside layout files and blocks
+- Completion support for phtml template names inside layout files and blocks
+
+### Changed
+
+- [Paid] It is possible to access templates comparison action from the context menu in the Project tool window
+- [Paid] It is possible to access navigate to the template overrides action from the context menu in the Project tool window
+
+### Fixed
+
+- Fixed PsiInvalidElementAccessException: Element class CompositeElement of type CLASS (class PhpClassElementType) in PhpClassEditUtil.kt:62
+
 ## [2023.1.0] - 2023-02-10
 
 ### Added
