@@ -1,5 +1,55 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
-# Magento and Adobe Commerce PhpStorm by Atwix Changelog
+# Magento 2 Support by Atwix Changelog
+
+## [2023.4.0] - 2023-05-19
+
+### Added
+
+- [Paid] Inspection for detecting usage of non InnoDB storage engines
+- [Paid] Inspection for detecting legacy objects injecting within email templates
+- Navigation support from used i18n string literals to declaration file(s) in PHP files
+- Navigation support from used i18n string literals to declaration file(s) in email templates (HTML files)
+- Navigation support from used i18n string literals to declaration file(s) in ui components templates (HTML files)
+- Navigation support from used i18n string literals to declaration file(s) in JavaScript files
+- Highlighting as JSON for text/x-magento-init script syntax
+
+### Changed
+
+- Made ChatGPT widget integration into IDE Tool Window feature free
+
+### Fixed
+
+- Fixed reentrant indexing at MagentoTestSourceVerifier:143 [#23](https://github.com/Atwix/phpstorm-plugin-feedback/issues/23)
+- Fixed ConcurrentModificationException at ControllerListService.kt:24 [#28](https://github.com/Atwix/phpstorm-plugin-feedback/issues/28)
+- Fixed ConcurrentModificationException in UiComponentLibService.kt:46 [#25](https://github.com/Atwix/phpstorm-plugin-feedback/issues/25)
+- Fixed failed to build index `ModuleIndex` for file `file:lib/internal/.../registration.php` [#24](https://github.com/Atwix/phpstorm-plugin-feedback/issues/24)
+- Fixed InvalidPathException while resolving JavaScript file by path [#26](https://github.com/Atwix/phpstorm-plugin-feedback/issues/26)
+- Fixed ArrayIndexOutOfBoundsException in UiComponentLibService:134 [#22](https://github.com/Atwix/phpstorm-plugin-feedback/issues/22)
+
+## [2023.3.0] - 2023-04-10
+
+### Added
+
+- [Paid] Action for running code refactoring with ChatGPT
+- [Paid] Core JavaScript UiComponents library (list) view and navigation
+- [Paid] Completion support for JavaScript widgets names
+- [Paid] Completion support for JavaScript UiComponents names
+- [Paid] Navigation support for JS Widget (from usage to implementation)
+- [Paid] Navigation support for UiComponent (from usage to implementation)
+- [Paid] Navigation support for JS Files (from usage in js module dependencies to implementation)
+- Action for showing/navigation to layouts where corresponding template is used
+- Action for comparing overridden by preference PHP file with original
+- Navigation support from layout to controller and vice versa
+
+### Fixed
+
+- Fixed failed to build index: [#20](https://github.com/Atwix/phpstorm-plugin-feedback/issues/20)
+
+## [2023.2.1] - 2023-03-22
+
+### Fixed
+
+- Fixed a compatibility issue with OS Windows
 
 ## [2023.2.0] - 2023-03-06
 
@@ -26,10 +76,10 @@
 
 ### Added
 
-- [Freemium] Added action to search controller by its path
-- [Freemium] Added inspection for detecting circular dependencies
+- [Paid] Added action to search controller by its path
+- [Paid] Added inspection for detecting circular dependencies
 - Added controller path/info above its class via code vision for project files
-- Added controller path/info for class via line marker for vendor files 
+- Added controller path/info for class via line marker for vendor files
 - Added action to generate new controller
 
 ## [2022.2.1] - 2022-12-28
@@ -43,9 +93,9 @@
 
 ### Added
 
-- [Freemium] Possibility to execute Magento CLI commands via Run Configuration
-- [Freemium] Validation for GIT commit that requires modules to be registered in `etc/config.php` file
-- [Freemium] Local composer paths support (custom source code roots)
+- [Paid] Possibility to execute Magento CLI commands via Run Configuration
+- [Paid] Validation for GIT commit that requires modules to be registered in `etc/config.php` file
+- [Paid] Local composer paths support (custom source code roots)
 - Action for a new Magento 2 module/theme generation
 - Auto-detection for installation path and local composer paths
 - Navigation support for PHP classes in XML files
@@ -56,26 +106,26 @@
 
 ### Changed
 
-- [Freemium] Added possibility to compare overridden `*.phtml` template with the parent theme override
-- [Freemium] It is possible to inject the original class if needed for the `dependency on implementation detail` quick fix
-- [Freemium] Removed the `dependency on implementation details` inspection highlighting for classes required by parent constructor
-- [Freemium] Added possibility to detect unspecified module dependencies in the XML files
+- [Paid] Added possibility to compare overridden `*.phtml` template with the parent theme override
+- [Paid] It is possible to inject the original class if needed for the `dependency on implementation detail` quick fix
+- [Paid] Removed the `dependency on implementation details` inspection highlighting for classes required by parent constructor
+- [Paid] Added possibility to detect unspecified module dependencies in the XML files
 - Copyright injection support for PHP and XML files (copyright module must be configured)
 - Updated plugin logo
 
 ### Fixed
 
-- [Freemium] Fixed slow usages search for the `dependency on implementation details` quick fix
-- Fixed "Read access is allowed from inside read-action (or EDT) only" - while running on-demand inspections with the disabled `Include test sources` flag 
+- [Paid] Fixed slow usages search for the `dependency on implementation details` quick fix
+- Fixed "Read access is allowed from inside read-action (or EDT) only" - while running on-demand inspections with the disabled `Include test sources` flag
 
 ## [2022.1.1] - 2022-12-05
 
 ### Added
 
-- [Freemium] Action for comparing overridden block template (in the theme or module) with the source template
-- [Freemium] Action for showing/navigation to template overrides
-- [Freemium] Inspection for detecting possible dependencies on implementation details and quick fix
-- [Freemium] Inspection for detecting a used code inconsistency with the specified module dependencies and quick fix
+- [Paid] Action for comparing overridden block template (in the theme or module) with the source template
+- [Paid] Action for showing/navigation to template overrides
+- [Paid] Inspection for detecting possible dependencies on implementation details and quick fix
+- [Paid] Inspection for detecting a used code inconsistency with the specified module dependencies and quick fix
 - Inspection for detecting objects instantiation via ObjectManger instance and quick fix
 - Inspection for detecting a session usage without a Proxy declaration (lazy loading) and quick fix
 - Inspection for detecting wrong Proxy (lazy loading) declaration and quick fix
