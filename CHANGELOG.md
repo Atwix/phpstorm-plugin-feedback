@@ -1,6 +1,27 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 # Magento 2 Support by Atwix Changelog
 
+## [Unreleased]
+
+### Added
+
+- [Paid] Action for viewing quality patches (QPT) for Magento installation
+- [Paid] Inspection for detecting missed variables in @vars comment block for email templates and quick fix
+- [Paid] Action for comparing overridden template with the source in Hyva compatibility module
+- [Paid] Action for showing/navigation to template overrides in Hyva compatibility module
+- Multiple module configuration files generation action
+- Collapsing for phrases that translated in dictionaries for PHP files
+- Collapsing for phrases that translated in dictionaries for JavaScript files
+- Collapsing for phrases that translated in dictionaries for <!-- ko i18n: 'XXX'--><!-- /ko --> syntax in HTML files
+
+### Changed
+
+- Reference to the translation line when using corresponding i18n reference navigation
+
+### Fixed
+
+- Fixed ChatGPT widget infinite login page
+
 ## [2023.4.0] - 2023-05-19
 
 ### Added
