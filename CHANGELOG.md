@@ -5,6 +5,23 @@
 
 ### Added
 
+- [Paid] Action for generating a Magento JavaScript mixin (for modules)
+- Action for generating Magento before/after/around plugins under [Code | Generate](https://www.jetbrains.com/help/phpstorm/generating-code.html)
+- Action to manually refreshing the Magento version in settings
+- Reference navigation for custom (not overridden) templates in the custom themes
+
+### Changed
+
+- Updated the minimum supported version to PHPStorm 2023.1
+
+### Fixed
+
+- Fixed an issue where the Magento version in settings was not updated after a Magento upgrade; now, the update happens automatically during project startup
+
+## [2023.5.0] - 2023-07-04
+
+### Added
+
 - [Paid] Action for viewing quality patches (QPT) for Magento installation
 - [Paid] Inspection for detecting missed variables in @vars comment block for email templates and quick fix
 - [Paid] Action for comparing overridden template with the source in Hyva compatibility module
