@@ -1,7 +1,7 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 # Magento 2 Support by Atwix Changelog
 
-## [2023.5.2] - 2023-10-30
+## [2023.5.2]- 2023-10-30
 
 ### Added
 
