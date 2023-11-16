@@ -1,7 +1,28 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 # Magento 2 Support by Atwix Changelog
 
-## [Unreleased]
+## [2023.5.2] - 2023-10-30
+
+### Added
+
+- [Paid] Action to search WEB API service by its URL
+- [Paid] Intentions support for most commonly used XML configuration files (di.xml, events.xml, routes.xml, and more)
+- Navigation support from WEB API declaration to WEB API service and vice versa
+- Action to copy path for Magento assets (supported asset types include: phtml templates, html templates, JavaScript files, CSS files, and images)
+- Inspection for detecting non-existent class/method declaration in webapi.xml file
+
+### Changed
+
+- Updated the minimum supported version to PHPStorm 2023.2
+- Copyright injection support for JS files (copyright module must be configured)
+- Added menu.xml file generation to the module configuration files generation action
+
+### Fixed
+
+- Fixed UnsupportedOperationException at Method getParent is not yet implemented in I18nReference$wrapPhraseInElement
+- Fixed Assertion failed starting at PluginCyclicCallLoopInspection.findWrappedMethodCalls:97
+
+## [2023.5.1] - 2023-09-30
 
 ### Added
 
