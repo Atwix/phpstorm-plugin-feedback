@@ -1,7 +1,85 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 # Magento 2 Support by Atwix Changelog
 
-## [2023.5.2]- 2023-10-30
+## [Unreleased]
+
+### Added
+
+- [Paid] Added functionality for running/debugging Magento CLI commands directly next to the command class name
+- [Paid] Automatic/manual generation of URNs schema with status tracking
+- [Paid] Navigation support from pluginized JavaScript files to JavaScript Mixins
+- Navigation support from JavaScript Mixin implementation to its declaration
+- Navigation support from JavaScript Mixin to pluginized JavaScript files
+- Intention support for adding CDATA to the empty comment tag in the system.xml file
+- Implemented an implicit usage provider for the controller class (and execute method) to prevent highlighting as unused elements
+- Implemented an implicit usage provider for the plugin class (and its methods) to prevent highlighting as unused elements
+- Implemented an implicit usage provider for the observer class (and execute method) to prevent highlighting as unused elements
+
+### Changed
+
+- Improved user experience for selecting module dependencies during the creation of a new Magento 2 module
+
+### Fixed
+
+- Fixed cannot generate plugin for another plugin method
+- Fixed Do not perform a synchronous refresh under read lock (MagentoProjectUtil:78)
+- Fixed patch generator compatibility issue with OS Windows
+
+## [2024.1.0] - 2024-02-26
+
+### Added
+
+- [Paid] Action to generate a git patch for an individual vendor file based on its changes before executing the action
+- [Paid] Completion support for various elements in the di.xml file
+- [Paid] Completion support for various elements in the communication.xml, queue_consumer.xml, queue_publisher.xml, and queue_topology.xml files
+- [Paid] Completion support for various elements in the webapi.xml file
+- Completion support for various elements in the extension_attributes.xml file
+- Completion support for various elements in the indexer.xml and mview.xml files
+- Completion support for various elements in the events.xml file
+- Completion support for various elements in the db_schema.xml file
+- Completion support for various elements in the routes.xml file
+- Completion support for various elements in the acl.xml file
+- Completion support for various elements in the system.xml file
+- Completion support for various elements in the module.xml file
+
+### Changed
+
+- Enhanced performance for the Magento CLI Run Configuration settings panel when opening
+- Added a context menu action in the Git Patches Viewer tree to open files in the editor
+
+### Fixed
+
+- Resolved issues related to read access being allowed from inside read-action for various actions
+- Fixed slow operations are prohibited on EDT for MyIsam engine usage inspection
+- Fixed PSI element is provided on EDT by ListPopupImpl for dependency on implementation details quick fix
+
+## [2023.5.3] - 2023-12-13
+
+### Added
+
+- [Paid] Action to view codebase changes for a given patch file (individual patch viewer)
+- [Paid] Action to break at first line of Magento plugins (configurable)
+- [Paid] Action to break at first line of Magento observers (configurable)
+- Added core contribution project support (source code is a Magento itself)
+- Navigation support from plugin implementation to its declaration
+- Navigation support from plugin to intercepted method
+- Navigation support from intercepted method to plugins
+- Inspection for detecting non-existent class declaration in 'for' attribute of the 'extension_attributes' tag inside the extension_attributes.xml file
+
+### Changed
+
+- [Paid] Added debugging support for Magento CLI Run Configuration
+- Added multiple results for navigation from WEB API service method to its declarations
+- Added quick navigation to the plugin configurable from the Magento Support main menu
+- Updated the minimum supported version to PHPStorm 2023.3
+
+### Fixed
+
+- Fixed IllegalArgumentException: Argument for @NotNull parameter must not be null at TemplateReferenceProvider:87
+- Fixed Assertion failed: Do not use PsiElement for popup model. See PsiTargetNavigator (navigation to layouts from controller)
+- Fixed Slow operations are prohibited on EDT for UpdatePlatformVersionService:23
+
+## [2023.5.2] - 2023-10-30
 
 ### Added
 
