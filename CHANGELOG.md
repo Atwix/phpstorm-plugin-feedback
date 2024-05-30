@@ -5,6 +5,69 @@
 
 ### Added
 
+- [Paid] Navigation support for referencing JavaScript files using relative paths defined in `requirejs-config.js` [RequireJS]
+- [Paid] Navigation support for referencing JavaScript files through relative paths specified in the `define` function arguments [RequireJS]
+- [Paid] Navigation support for referencing JavaScript files via relative paths outlined in the `require` function arguments in PHTML files [RequireJS]
+- [Paid] Navigation support for referencing HTML templates using relative paths defined in requirejs-config.js [RequireJS, typically used for template overrides]
+- [Paid] Navigation support for referencing HTML templates through relative paths specified in the define function arguments [RequireJS, commonly used with the !text plugin]
+- Navigation support from observer class to its declaration
+- Completion support for Magento component names within the `require` section of the composer.json file
+
+### Changed
+
+- Added disabled plugins to navigation from plugin implementation to its declaration
+- Implemented auto-detection for the default directory of git patches in the git patch generation dialog
+- Enhanced navigation from UI components JavaScript files to their associated template files and vice versa
+- Enhanced completion support for ACL resource IDs in the `aclResource` attribute of `<block>` tags (layouts), the `aclResource` tag in UI components declaration files, and the `resource` attribute in `menu.xml` files
+- Enhanced navigation support from ACL resource ID usages to their declarations, including `menu.xml`, `webapi.xml`, `extension_attributes.xml`, `system.xml`, layouts, and UI component layout files
+
+### Fixed
+
+- Prevented the completion popup from closing when the `:` character is entered while completing ACL resource IDs
+
+## [2024.1.3] - 2024-05-16
+
+### Added
+
+- [Paid] Action to generate a page configuration layout update from a module
+- [Paid] Action to generate a page configuration layout update from a target layout XML file
+- Action to override a PHTML template in a theme
+- Action to override a PHTML template in a module
+- Action to override a page layout in a theme
+- Action to override an email template in a theme
+- Action to override a JS template in a theme
+- Action to override a JS template in a module
+- Navigation support from ACL resource id usages to its declaration
+
+### Changed
+
+- Included module name in the navigatable presentation section of the "Navigate to Usages" (phtml usages) popup
+- [CLI Commands] Implemented parsing of a command name when provided as a default value for the `$name` constructor parameter
+- [CLI Commands] Implemented parsing of command name and description when provided as default values for the `$defaultName` and `$defaultDescription` properties
+
+## [2024.1.2] - 2024-04-15
+
+### Added
+
+- [Paid] Navigation support from UI component template usages in UI component JavaScript files to their corresponding template files
+- [Paid] Navigation support from UI component templates to their usages in JavaScript UI component files
+- Action for generating a Magento observer for an event
+- Inspection to identify violations of the PHPMD.UnusedFormalParameter rule in Magento 2 plugins, quick fix to suppress it
+- Navigation support for navigating from di.xml argument configurations to corresponding PHP class constructor parameters in types and virtual types
+
+### Changed
+
+- Navigation support from pluginized JavaScript files to JavaScript Mixins now includes searching for mixins declared in themes
+
+### Fixed
+
+- The generated plugin file now includes the `Plugin` suffix in its name automatically (plugin generation)
+- Plugin class names can no longer be generated from lowercase letters (plugin generation)
+
+## [2024.1.1] - 2024-03-18
+
+### Added
+
 - [Paid] Added functionality for running/debugging Magento CLI commands directly next to the command class name
 - [Paid] Automatic/manual generation of URNs schema with status tracking
 - [Paid] Navigation support from pluginized JavaScript files to JavaScript Mixins
