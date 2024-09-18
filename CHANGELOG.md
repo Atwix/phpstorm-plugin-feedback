@@ -5,6 +5,43 @@
 
 ### Added
 
+- [Paid] Navigation support from event usage to its dispatching
+- Navigation support from event dispatching to its usages in events.xml files
+
+### Changed
+
+- Added the last fetched date and time for URNs mapping status
+- Added support for the catalog_attributes.xml file in the Magento 2 Configuration File action.
+
+### Fixed
+
+- Fixed NoClassDefFoundError: LocalHistoryImpl in OldestHistorySnapshotManager:33
+- Fixed PSI can be created only for a file with LanguageFileType but actual is class DetectedByContentFileType in TranslationIndex:32
+
+## [2024.2.0] - 2024-08-16
+
+### Added
+
+- [Paid] Action to generate a `_module.less` file for the module
+- [Paid] Action for extending 3rd party module styles within custom themes using the `_extend.less` file
+- Navigation support from PHP classes to its usages in XML files
+- Inspection for detecting missing Magento 2 URN mapping for XSD schema within XML files and quick fix
+
+### Changed
+
+- Added support for Mage-OS
+- Updated the minimum supported version to PHPStorm 2024.2
+- Removed the action for running code refactoring with ChatGPT (recommended to use the official AI Assistant from JetBrains)
+- Removed the ChatGPT widget in favor of the official AI Assistant from JetBrains
+
+### Fixed
+
+- Added support for PHPStorm 2024.2
+
+## [2024.1.4] - 2024-06-11
+
+### Added
+
 - [Paid] Navigation support for referencing JavaScript files using relative paths defined in `requirejs-config.js` [RequireJS]
 - [Paid] Navigation support for referencing JavaScript files through relative paths specified in the `define` function arguments [RequireJS]
 - [Paid] Navigation support for referencing JavaScript files via relative paths outlined in the `require` function arguments in PHTML files [RequireJS]
