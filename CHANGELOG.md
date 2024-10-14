@@ -1,7 +1,21 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 # Magento 2 Support by Atwix Changelog
 
-## [Unreleased]
+## [2024.3.0] - 2024-10-01
+
+### Added
+
+- Added support for PhpStorm 2024.3 EAP
+
+## [2024.2.2] - 2024-10-01
+
+### Added
+
+- [Paid] Added custom search scopes to enhance development experience when working with Magento
+- Added recognition of Magento generated folder for class usage searches
+- Completion support for table and column names in `db_schema_whitelist.json` file
+
+## [2024.2.1] - 2024-09-18
 
 ### Added
 
