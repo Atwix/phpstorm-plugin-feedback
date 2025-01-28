@@ -1,6 +1,39 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 # Magento 2 Support by Atwix Changelog
 
+## [2025.1.0] - 2025-01-20
+
+### Added
+
+- [Paid] Added Plugin Inspector
+- Completion support for the `xsi:type` attribute value in page configuration and UI component configuration layouts
+- Added navigation support from virtual type name usage to the corresponding name attribute value in the virtual type definition (within the `di.xml` file scope)
+
+### Changed
+
+- Added navigation from JS component template usage in XML files to the corresponding template
+- Added `csp_whitelist.xml` file generation to the module configuration files generation action
+- Changed the module name field in the observer generation dialog from a combo box to an autocompletion field
+
+### Fixed
+
+- Resolved an issue where double quotes in the description property of `composer.json` were not escaped during module generation
+- Fixed read access is allowed from inside read-action only in ControllerSEContributor.kt:77
+
+## [2024.3.1] - 2024-11-22
+
+### Changed
+
+- Excluded already defined columns from the completion suggestions for column names in the `db_schema.xml` file.
+- Excluded already defined tables from the completion suggestions for table names in the `db_schema.xml` file.
+
+### Fixed
+
+- Fixed an issue where multiple arguments and options could not be passed to the CLI Run Configuration
+- Fixed an issue where the layout update generator used the layout from an overriding or extending module instead of the original
+- Fixed issue preventing navigation from XML configuration to a PHP class when the FQN starts with a leading backslash (`\`)
+- Fixed issue where the 'Choose Module' component did not include modules added via symlinks
+
 ## [2024.3.0] - 2024-10-01
 
 ### Added
