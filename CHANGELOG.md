@@ -1,6 +1,50 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 # Magento 2 Support by Atwix Changelog
 
+## [2025.2.1] - 2025-08-07
+
+### Added
+
+- [Paid] Added import/export functionality for PHP breakpoints
+
+### Fixed
+
+- Preserved fully-qualified class names in XML on PHP class rename
+- Added PhpStorm 2025.2 to the supported IDE versions
+
+## [2025.2.0] - 2025-06-10
+
+### Added
+
+- [Paid] Actions to generate GraphQL resolvers directly from directory or Search Everywhere
+- [Paid] Intention to generate resolver class from GraphQL directive context
+- [Paid] Action to extend existing GraphQL schema from interface, type, or field
+- [Paid] Navigation support from `@resolver`/`@typeResolver` directive to PHP class
+- [Paid] Navigation support from PHP class to corresponding `@resolver`/`@typeResolver` directive
+- [Paid] Completion support for resolver class FQN in GraphQL directives
+- [Paid] Inspection to detect missing GraphQL resolver classes with quick fix support
+- [Paid] Inspection to validate resolver FQN format in GraphQL directives with quick fix support
+- [Paid] Inspection to detect missing `@typeResolver` directive for GraphQL interfaces with quick fix support
+- [Paid] Intention to paste PHP class FQN into GraphQL directive in the correct format
+- [Paid] Smart formatting when copying or pasting resolver FQNs in GraphQL schema
+- Simplified setup of the GraphQL plugin with a Magento-aware config generator
+
+## [2025.1.1] - 2025-04-01
+
+### Added
+
+- [Paid] Navigation support from a block name to its reference blocks
+- [Paid] Navigation support from a reference block name to its block declaration
+- Navigation support from a container name to its reference containers
+- Navigation support from a reference container name to its container declaration
+- Navigation support from a block class to its associated PHTML templates
+- Navigation support from a grid or form UI component name in a layout file to its corresponding layout markup file
+
+### Fixed
+
+- Fixed access is allowed with explicit read lock in ConfigFileCheckinHandler.kt:73
+- Fixed incorrect URN schema prefix for Magento framework XSDs in Mage-OS projects
+
 ## [2025.1.0] - 2025-01-20
 
 ### Added
