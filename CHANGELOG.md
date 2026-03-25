@@ -1,6 +1,58 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 # Magento 2 Support by Atwix Changelog
 
+## [Unreleased]
+
+### Added
+
+- [Paid] Added MCP tools for project introspection, including vendors, modules, themes, events, observers, plugins, controllers, and Web API endpoints
+- [Paid] Added MCP tools for JavaScript mixin discovery, declaration lookup, and registration tracing
+- [Paid] Added MCP tools for generating modules, observers, plugins, controllers, layouts, PHTML overrides, view models, and configuration files
+
+### Changed
+
+- Removed automatic PHP copyright `/*` to `/**` replacement for PhpStorm compatibility; configure it manually in `Settings | Editor | Copyright | Formatting | PHP` by enabling `Use custom formatting options` and `Separator before`, and by disabling `Add blank line after`
+- Updated the minimum supported version to PHPStorm 2026.1
+
+## [2025.2.3] - 2026-03-12
+
+### Changed
+
+- Updated the minimum supported version to PHPStorm 2025.3
+
+### Fixed
+
+- Fixed NoClassDefFoundError: MysqlBaseSchema in MagentoDatabaseUtil:56
+- Fixed NullPointerException at NonProxySessionUsageQuickFix:48
+- Fixed PluginException: Cannot load class JsUpdateCopyrightsProvider
+
+## [2025.2.2] - 2025-09-29
+
+### Added
+
+- [Paid] Inspection to detect arguments in di.xml whose names do not match any constructor parameter of the resolved PHP class (Unmatched argument in di.xml)
+- [Paid] Inspection to detect missing PHP class specified in the preference/@for, preference/@type, plugin/@type, type/@name, virtualType/@type, argument[@xsi:type="object"]/text(), item[@xsi:type="object"]/text() in di.xml
+- [Paid] Inspection to detect a missing PHP class specified in observer/@instance in events.xml
+- [Paid] Reference navigation for move/@element and move/@destination in layout XML to corresponding block/container declarations
+- Inspection to detect missing PHP class specified in the source_model/text(), backend_model/text(), frontend_model/text() in system.xml
+- Inspection to detect missing ACL Resource ID specified in resource/text() in system.xml
+- Inspection to detect a missing predefined type or PHP class specified in field/@type in system.xml
+- Completion for referenceBlock/@name and referenceContainer/@name in layout XML with suggestions from existing declarations
+- Completion for move/@element and move/@destination in layout XML with suggestions from existing block and container declarations
+- Completion support for field/@type in system.xml, with suggestions from predefined types such as text, textarea, select, and others
+
+### Changed
+
+- Updated the minimum supported version to PHPStorm 2025.2
+- Navigation to PHTML template usages now includes all possible declarations, including those in PHP classes
+- Reference navigation from argument names in `di.xml` `<type>` and `<virtualType>` definitions now resolves multi-level virtual type inheritance when locating constructor parameters
+- Reference navigation from block/@name to its references now includes usages in move/@element
+- Reference navigation from container/@name to its references now includes usages in move/@element
+
+### Fixed
+
+- Fixed implicitly nullable types in generated GraphQL resolvers for compatibility with Magento 2.4.8 on PHP 8.4
+
 ## [2025.2.1] - 2025-08-07
 
 ### Added
